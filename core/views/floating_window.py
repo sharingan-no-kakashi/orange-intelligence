@@ -30,6 +30,9 @@ class FloatingWindow(QWidget):
         current_index = self.tab_widget.currentIndex()
         current_widget = self.tab_widget.currentWidget()
 
+        if event.key() == Qt.Key.Key_Escape:
+            self.close()
+
         # Retrieve the QListWidget inside the current tab
         if current_widget:
             list_widget = current_widget.findChild(QListWidget)
