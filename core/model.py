@@ -1,9 +1,10 @@
 import logging
 
+from utils import load_all_available_functions
+
 import extensions
 import extensions.ollama.example
 from extensions.variables import variables
-from utils import load_all_available_functions
 
 LOG = logging.getLogger(__name__)
 

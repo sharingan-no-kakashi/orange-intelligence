@@ -16,6 +16,7 @@ pyperclip="1.9.0"
 PyQt6="6.8.0"
 ollama="0.4.7"
 pyobjc-framework-Cocoa="11.0"
+openai="1.60.1"
 
 [tool.poetry.dev-dependencies]
 black = "^23.7.0"

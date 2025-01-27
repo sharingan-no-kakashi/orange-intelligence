@@ -17,9 +17,7 @@ CONFIG = {
         "url": "https://ollama.com",
         "default_model": "llama3.1",
     },
-    "openai": {
-        "api_key": os.environ.get("OPENAI_API_KEY"),
-    },
+    "openai": {"api_key": os.environ.get("OPENAPI_KEY"), "default_model": "gpt-3.5-turbo"},
     "logging": {
         "version": 1,
         "disable_existing_loggers": False,

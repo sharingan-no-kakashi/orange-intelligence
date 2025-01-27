@@ -2,10 +2,11 @@ import logging.config
 import sys
 
 from config import CONFIG
-from core.controller import Controller
-from core.model import Model
 from PyQt6.QtWidgets import QApplication
 from utils import avoid_dock_macos_icon
+
+from core.controller import Controller
+from core.model import Model
 
 
 def main():

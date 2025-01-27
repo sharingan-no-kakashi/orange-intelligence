@@ -2,14 +2,15 @@ import logging
 import time
 
 import pyperclip
-from core.model import Model
-from core.views.floating_window import FloatingWindow
-from core.views.system_tray import SystemTray
-from core.views.text_processing import TextWindow
 from pynput import keyboard
 from PyQt6.QtCore import QTimer, pyqtSignal
 from PyQt6.QtWidgets import QApplication
 from utils import cmd_v, get_current_process_id, get_focused_text, put_app_in_focus, return_app_in_focus
+
+from core.model import Model
+from core.views.floating_window import FloatingWindow
+from core.views.system_tray import SystemTray
+from core.views.text_processing import TextWindow
 
 LOG = logging.getLogger(__name__)
 
@@ -130,11 +131,7 @@ class Controller:
         self.recreate_text_window()
 
     def open_text_window(self) -> None:
-        self.get_focused_text()
-        LOG.debug(self.focused_text)
-        QTimer.singleShot(0, self._open_text_window)
-        QTimer.singleShot(100, self.view.text_window.show)
-        self.text_window_open = True
+        pass  # This is still unreliable
 
     def open_floating_window(self) -> None:
         self.get_focused_text()

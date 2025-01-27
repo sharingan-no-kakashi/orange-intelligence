@@ -1,6 +1,7 @@
 import logging
 
 from config import CONFIG
+
 from ollama import ChatResponse, chat
 
 LOG = logging.getLogger(__name__)

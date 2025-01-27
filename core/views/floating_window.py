@@ -1,9 +1,10 @@
 import logging
 
-from core.views.styling.floating_window_style import FloatingWindowStyleOptions
 from PyQt6.QtCore import Qt, pyqtSignal
 from PyQt6.QtGui import QCloseEvent, QHideEvent, QKeyEvent, QShowEvent
 from PyQt6.QtWidgets import QListWidget, QListWidgetItem, QTabWidget, QVBoxLayout, QWidget
+
+from core.views.styling.floating_window_style import FloatingWindowStyleOptions
 
 LOG = logging.getLogger(__name__)
 
